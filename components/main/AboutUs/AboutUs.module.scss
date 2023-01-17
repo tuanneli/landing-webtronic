@@ -1,0 +1,88 @@
+.about_us {
+  width: 1260px;
+  transform: translateY(-86px);
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+
+  &__left_part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__image {
+    width: 570px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__mentors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    width: 570px;
+  }
+
+  &__right_part {
+    width: 486px;
+    height: 88px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.mentors_table {
+  display: flex;
+  justify-content: center;
+
+  &__image {
+    width: 188px;
+    height: 188px;
+  }
+
+  &__card {
+    list-style: none;
+    width: 188px;
+    height: 277px;
+
+    &:nth-child(2) {
+      transform: translateY(-50px);
+    }
+
+    dt {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 120%;
+      padding-bottom: 5px;
+    }
+
+    dd {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

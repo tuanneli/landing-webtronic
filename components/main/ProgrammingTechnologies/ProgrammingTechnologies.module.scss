@@ -1,0 +1,42 @@
+.programming_technologies {
+  width: 1260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 181px;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 543px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    width: 432px;
+    margin-bottom: 54px;
+  }
+
+  &__list {
+
+    list-style: none;
+    display: flex;
+    gap: 24px;
+
+    img {
+      width: 182px;
+      height: 230px;
+    }
+  }
+}
