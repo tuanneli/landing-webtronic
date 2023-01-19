@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './FrontendDeveloper.module.scss';
+import {resolveHref} from "next/dist/shared/lib/router/router";
+import Link from "next/link";
 
 const FrontendDeveloper = () => {
+
     return (
         <section className={styles.fronted_developer}>
             <div className={styles.fronted_developer__wrapper}>
@@ -14,9 +17,11 @@ const FrontendDeveloper = () => {
                     </p>
                  </span>
                 <span className={styles.row_two}>
-                     <button>
+                    <Link href={"#contactUs"}>
+                                         <button>
                          Start my career change
                      </button>
+                    </Link>
                      <h1>DEVELOPER</h1>
                  </span>
                 <span className={styles.row_three}>

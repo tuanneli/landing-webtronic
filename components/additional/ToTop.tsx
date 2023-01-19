@@ -1,17 +1,26 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from "./ToTop.module.scss";
 
 const ToTop = () => {
     const [elementStyle, setElementStyle] = useState<'block' | 'none'>('none')
 
+    useEffect(() => {
+        window.addEventListener('scroll', scrollFunction);
+        return function () {
+            document.removeEventListener('scroll', scrollFunction);
+        }
+    }, [])
+
     const scrollFunction = () => {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            setElementStyle('block')
-            // }
+            setElementStyle("block")
         } else {
             setElementStyle('none');
         }
     }
+
+    // console.log(document.body.scrollTop)
+    // console.log(document.documentElement.scrollTop)
 
     const topFunction = () => {
         document.body.scrollTop = 0;
